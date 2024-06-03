@@ -3,7 +3,7 @@ import React from 'react';
 const Error = () => {
     return (
         <div>
-            Error
+            Error lỗi con mẹ nó rồi
         </div>
     );
 }
