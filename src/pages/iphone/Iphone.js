@@ -1,0 +1,67 @@
+import React, { useContext } from 'react';
+import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
+import './iphone.css'
+import { AppContext } from '../../AppContext';
+import { Card, CardBody, CardText, CardTitle, Col, Container, Row } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import Slick from '../../components/slick/Slick';
+const Iphone = () => {
+    const { data, addCart } = useContext(AppContext)
+    return (
+        <div>
+            <Header />
+
+            <Container>
+
+                <h1 className='iphone'> <span><i class="fa-brands fa-apple apple"></i></span> iPhone</h1>
+                <Row>
+                    {
+                        data &&
+                        data.slice(0, 8).map((item, index) => (
+
+                            <Col md={3} sm={12} xs={6}  >
+
+                                <Card className='box-product product-shadow mt-4 bg-color-box'
+                                    data-aos="fade-right"
+                                    data-aos-offset="300"
+                                    data-aos-easing="ease-in-sine"
+                                >
+
+                                    <img className='img-box'
+                                        alt="Sample"
+                                        src={item.img}
+                                    />
+
+                                    <CardBody className='box-product'>
+                                        <Link to={`/product/${item.id}`} key={index}>
+                                            <CardTitle tag="h5"  >
+                                                <h1 className='title-product' >{item.NameProduct}</h1>
+                                            </CardTitle>
+                                            <CardText>
+                                                <p className='price '><b>{item.Gia} USD</b><del>{item.GiaGoc} USD</del> </p>
+                                            </CardText>
+                                        </Link>
+
+                                    </CardBody>
+                                    <div className='box-buy'>
+                                        <button className='add-cart' onClick={() => addCart((item.id))}>Add</button>
+                                        <Link to='/thanh-toan'><button className='buy'>Buy</button></Link>
+                                    </div>
+                                </Card>
+                            </Col>
+                        ))
+                    }
+
+
+
+                </Row>
+            </Container>
+            <h1 className='title-slick'>Sản phẩm liên quan</h1>
+            <Slick />
+            <Footer />
+        </div>
+    );
+}
+
+export default Iphone;

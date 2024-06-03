@@ -1,0 +1,16 @@
+.quyen-loi .box {
+    max-width: 200px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.quyen-loi .box i {
+    font-size: 40px;
+}
+
+.quyen-loi {
+    padding: 20px 10px;
+    background: #323232;
+    color: #f8f8f8;
+    margin-top: 5px;
+}

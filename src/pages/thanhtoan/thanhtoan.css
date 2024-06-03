@@ -1,0 +1,55 @@
+.box-thanhtoan {
+    padding: 30px 15px;
+    border-radius: 20px;
+}
+
+.box-left {
+    border-bottom: 1px solid #fff;
+}
+
+.title-thanhtoan {
+    display: flex;
+    justify-content: space-between;
+}
+
+.thong-tin input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.thong-tin span {
+    display: inline-block;
+    padding: 10px 0 5px 5px;
+}
+
+.thong-tin p {
+    padding: 5px 5px 0 5px;
+}
+
+.title-giaohang {
+    text-align: center;
+}
+
+.dat-hang {
+    display: inline-block;
+    margin: 0 auto;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    background: linear-gradient(to right, rgb(181, 24, 13), rgb(103, 36, 22));
+    color: #fff;
+    font-size: 20px;
+}
+
+.dat-hang:hover {
+    transform: translateY(-5px);
+    transition: 1s;
+    background: linear-gradient(to right, rgb(126, 28, 21), rgb(205, 42, 10));
+}

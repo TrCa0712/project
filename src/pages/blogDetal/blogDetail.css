@@ -1,0 +1,17 @@
+.title {
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* .img-blog-detail {
+    margin: 0 2.5%;
+} */
+
+.noi_dung {
+    padding: 20px 0 5px 0;
+}
+
+.title-blog-detail {
+    border-radius: 20px;
+    padding: 20px 40px;
+}

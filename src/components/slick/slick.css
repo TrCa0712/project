@@ -1,0 +1,26 @@
+.img-slick {
+    margin: 0 auto;
+}
+
+.slider-container {
+    margin: 0 7% 0 7%;
+}
+
+.box-slick {
+    background: #323232 !important;
+    border-radius: 20px;
+    padding: 10px 5px;
+}
+
+.box-slick:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.title-slick {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.slider-container {
+    margin-bottom: 60px;
+}

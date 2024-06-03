@@ -1,0 +1,25 @@
+.blog-slick {
+    height: 290px !important;
+}
+
+.blog-slick a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.title-blog {
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 14px;
+}
+
+
+.img-slick-blog {
+    border-radius: 10px 10px 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .blog-slick {
+        height: 250px !important;
+    }
+}

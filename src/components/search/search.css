@@ -1,0 +1,23 @@
+.goi-y-search {
+    padding: 5px 5px 5px 10px;
+}
+
+.goi-y-search a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+
+
+}
+
+.goi-y-search span {
+    display: inline-block;
+    width: 100%;
+    padding: 2px;
+    transition: 1s;
+    border-bottom: 1px solid rgba(151, 8, 56, 0.8);
+}
+
+.goi-y-search span:hover {
+    background: rgba(0, 0, 0, 0.5);
+}

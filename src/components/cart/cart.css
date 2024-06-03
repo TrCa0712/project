@@ -1,0 +1,78 @@
+.gio-hang {
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.img-cart {
+    width: 60px;
+}
+
+
+.box-cart {
+    background: #323232;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.title-cart {
+    background: linear-gradient(to right, rgb(109, 15, 8), rgb(123, 44, 28));
+    padding: 10px 5px;
+    border-radius: 0 0 20px 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.thanh-toan {
+    width: 170px !important;
+}
+
+.box-sanpham {
+    padding: 10px 5px;
+    background: #323232;
+    border-radius: 0 0 20px 20px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 0 5% 0 5%;
+}
+
+.btn-cart {
+    padding: 0 5px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-cart:hover {
+    opacity: 0.2;
+}
+
+.btn {
+    font-size: 18px !important;
+    color: #fff !important;
+}
+
+.mua-sam {
+    background: linear-gradient(to right, rgb(25, 6, 119), rgb(42, 99, 185)) !important;
+}
+
+.mua-sam:hover {
+    background: linear-gradient(to right, rgb(17, 5, 77), rgb(104, 105, 156)) !important;
+}
+
+.remo-cart {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #aa0d0d71 !important;
+}

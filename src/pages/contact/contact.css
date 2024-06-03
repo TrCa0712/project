@@ -1,0 +1,62 @@
+.title-contact {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 30px;
+
+}
+
+.thong-tin-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 80px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+}
+
+
+.thong-tin-contact label {
+    display: inline-block;
+    padding: 10px 0 5px 5px;
+}
+
+.thong-tin-contact input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.thong-tin-contact textarea {
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.thong-tin-contact .gui {
+    display: inline-block;
+    margin: 0 auto;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    background: linear-gradient(to right, rgb(181, 24, 13), rgb(103, 36, 22));
+    color: #fff;
+    font-size: 20px;
+}
+
+.gui:hover {
+    transform: translateY(-5px);
+    transition: 1s;
+    background: linear-gradient(to right, rgb(126, 28, 21), rgb(205, 42, 10));
+}
