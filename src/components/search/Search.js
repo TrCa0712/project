@@ -49,9 +49,9 @@ const Search = () => {
                             {searchValue.trim() === '' && (
                                 <div className='goi-y-search'>
                                     <span>Sản phẩm gợi ý</span>
-                                    <Link to='./iphone'><span>iPhone</span></Link><br />
-                                    <Link to='./macbook'><span>MacBook</span></Link><br />
-                                    <Link to='./airpod'><span>Airpod</span></Link><br />
+                                    <Link to='/iphone'><span>iPhone</span></Link><br />
+                                    <Link to='/macbook'><span>MacBook</span></Link><br />
+                                    <Link to='/airpod'><span>Airpod</span></Link><br />
                                 </div>
                             )}
                             <div className='box-search'>

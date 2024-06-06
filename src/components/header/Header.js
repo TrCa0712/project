@@ -14,7 +14,9 @@ const Header = () => {
     const { cart } = useContext(AppContext)
     const sidebarRef = useRef()
     const searchRef = useRef()
-
+    const removeSearch = () => {
+        searchRef.current.classList.remove("active")
+    }
     const handleSearch = () => {
         searchRef.current.classList.toggle("active")
     }
@@ -61,9 +63,11 @@ const Header = () => {
                         <li><Link to='/contact'>Contact</Link></li>
                     </ul>
                 </div>
-                <button className='search-header' onClick={handleSearch}>
-                    <i className="fa-solid fa-magnifying-glass"></i>
-                </button>
+                <Tippy content="Tìm kiếm">
+                    <button className='search-header' onClick={handleSearch}>
+                        <i className="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </Tippy>
                 <div className='cart'>
                     <Tippy content='Giỏ hàng'>
                         <Link to='/cart'>
@@ -109,10 +113,9 @@ const Header = () => {
                 <div className='top-search'>
                     <Search />
                 </div>
-                <div className='bottom-search'>
+                <div className='bottom-search' onClick={removeSearch}>
                 </div>
             </div>
-
         </div>
     );
 }
