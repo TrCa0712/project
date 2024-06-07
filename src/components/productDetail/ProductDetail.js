@@ -18,7 +18,7 @@ const ProductDetail = () => {
         axios.get(url)
             .then((res) => {
                 const productData = res.data;
-                const image = addImg.find(img => img.id === parseInt(id))?.img || ip15; // Find the image or fallback to a default image
+                const image = addImg.find(img => img.id === parseInt(id))?.img || ip15;
                 setData({ ...productData, img: image });
             })
             .catch((error) => {
@@ -63,11 +63,10 @@ const ProductDetail = () => {
                             <p> {data && data.manhinh} </p>
                             <p> {data && data.dosang} </p>
                             <Button className='add-cart p-2 ' onClick={() => addCart((data.id))}>Add cart</Button>
-                            <Link to='/thanh-toan'><Button className='buy p-2 ' >Buy</Button> <br /></Link>
+                            <Link to='/thanh-toan'><Button className='buy p-2 ' onClick={() => addCart(data.id)}>Buy</Button> <br /></Link>
                             <div className='tro-lai'>
                                 <Link to='/products'><button className='remo '> <i class="fa-solid fa-arrow-left"></i> Tiếp tục mua sắm</button></Link>
                             </div>
-
                         </div>
                     </Col>
                 </Row>

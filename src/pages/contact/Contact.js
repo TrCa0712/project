@@ -29,7 +29,7 @@ const Contact = () => {
                             <input type='number' placeholder='Nhập số điện thoại' /><br />
                         </div>
                         <div>
-                            <label>Emial*</label><br />
+                            <label>Email*</label><br />
                             <input type='email' placeholder='Emial' /><br />
                         </div>
                         <div>

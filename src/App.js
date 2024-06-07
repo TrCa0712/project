@@ -32,8 +32,7 @@ const App = () => {
                         <Route path='/airpod' element={<Airpod />}></Route>
                         <Route path='/cart' element={<Cart />}></Route>
                         <Route path='/thanh-toan' element={<ThanhToan />}></Route>
-
-                        {/* <Route path='/*' element={<Error />}></Route> */}
+                        <Route path='/*' element={<Error />}></Route>
                     </Routes>
                 </BrowserRouter>
             </AppProvider>

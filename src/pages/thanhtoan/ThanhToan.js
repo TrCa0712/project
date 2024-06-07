@@ -72,7 +72,7 @@ const ThanhToan = () => {
                                     <input type='text' placeholder='Nhập tên' />
                                     <span>Số điện thoại*</span>
                                     <input type='number' placeholder='Nhập số điện thoại' />
-                                    <span>Emial*</span>
+                                    <span>Email*</span>
                                     <input type='email' placeholder='Emial' />
                                     <span>Địa chỉ nhận hàng*</span>
                                     <input type='text' placeholder='Địa chỉ' />

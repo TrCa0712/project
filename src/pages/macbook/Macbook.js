@@ -25,26 +25,27 @@ const Macbook = () => {
                                     data-aos-offset="300"
                                     data-aos-easing="ease-in-sine"
                                 >
+                                    <Link to={`/product/${item.id}`} key={index}>
+                                        <img className='img-box' width='100%'
+                                            alt="Sample"
+                                            src={item.img}
+                                        />
 
-                                    <img className='img-box'
-                                        alt="Sample"
-                                        src={item.img}
-                                    />
+                                        <CardBody className='box-product'>
 
-                                    <CardBody className='box-product'>
-                                        <Link to={`/product/${item.id}`} key={index}>
                                             <CardTitle tag="h5"  >
                                                 <h1 className='title-product' >{item.NameProduct}</h1>
                                             </CardTitle>
                                             <CardText>
                                                 <p className='price '><b>{item.Gia} USD</b><del>{item.GiaGoc} USD</del> </p>
                                             </CardText>
-                                        </Link>
 
-                                    </CardBody>
+
+                                        </CardBody>
+                                    </Link>
                                     <div className='box-buy'>
                                         <button className='add-cart' onClick={() => addCart((item.id))}>Add</button>
-                                        <Link to='/thanh-toan'><button className='buy'>Buy</button></Link>
+                                        <Link to='/thanh-toan'><button className='buy' onClick={() => addCart(item.id)}>Buy</button></Link>
                                     </div>
                                 </Card>
                             </Col>
