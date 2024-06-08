@@ -12,7 +12,7 @@ const Product = () => {
             <Container>
                 <Row >
                     {
-                        data &&
+                        // data &&
                         data.map((item, index) => (
                             <Col md={3} sm={12} xs={6}>
                                 <Card className='box-product product-shadow mt-4 bg-color-box' data-aos="zoom-in"  >

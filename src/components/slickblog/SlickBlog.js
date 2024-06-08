@@ -24,7 +24,7 @@ const SlickBlog = () => {
             <h1 className='title-slick mt-5' data-aos="flip-left"><span><i class="fa-brands fa-apple"></i></span> Blog</h1>
             <Slider {...settings}>
                 {
-                    datablog &&
+                    // datablog &&
                     datablog.map((item, index) => (
                         <div key={index}>
                             <Card className='box-slick blog-slick'

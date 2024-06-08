@@ -154,8 +154,8 @@ export function AppProvider({ children }) {
         }
     ]
     const [cart, setCart] = useState([])
-    const [datablog, setBlog] = useState(null)
-    const [data, setData] = useState(null)
+    const [datablog, setBlog] = useState([])
+    const [data, setData] = useState([])
     // thêm sản phẩm vào giỏ hàng
     const addCart = (id) => {
         const pro = data.find(item => item.id === id)

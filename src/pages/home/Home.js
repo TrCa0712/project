@@ -7,8 +7,6 @@ import banner from '../../images/banner.png'
 import Quyenloi from '../../components/quyenloi/Quyenloi';
 import SlickBlog from '../../components/slickblog/SlickBlog';
 import Slick from '../../components/slick/Slick';
-import Iphone from '../iphone/Iphone';
-import Macbook from '../macbook/Macbook';
 
 
 const Home = () => {
