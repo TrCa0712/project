@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppProvider } from './AppContext';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/home/Home';
 import Blog from './pages/blog/Blog';
 import Products from './pages/products/Products';
@@ -19,7 +19,7 @@ const App = () => {
         <div>
 
             <AppProvider>
-                <BrowserRouter>
+                <HashRouter>
                     <Routes>
                         <Route index element={<Home />}></Route>
                         <Route path='/blog' element={<Blog />}></Route>
@@ -34,7 +34,7 @@ const App = () => {
                         <Route path='/thanh-toan' element={<ThanhToan />}></Route>
                         <Route path='/*' element={<Error />}></Route>
                     </Routes>
-                </BrowserRouter>
+                </HashRouter>
             </AppProvider>
         </div>
     );
